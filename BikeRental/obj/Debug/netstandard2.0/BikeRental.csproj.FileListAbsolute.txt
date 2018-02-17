@@ -1,0 +1,8 @@
+C:\Git\BikeRental\BikeRental\bin\Debug\netstandard2.0\BikeRental.deps.json
+C:\Git\BikeRental\BikeRental\bin\Debug\netstandard2.0\BikeRental.dll
+C:\Git\BikeRental\BikeRental\bin\Debug\netstandard2.0\BikeRental.pdb
+C:\Git\BikeRental\BikeRental\obj\Debug\netstandard2.0\BikeRental.csproj.CoreCompileInputs.cache
+C:\Git\BikeRental\BikeRental\obj\Debug\netstandard2.0\BikeRental.AssemblyInfoInputs.cache
+C:\Git\BikeRental\BikeRental\obj\Debug\netstandard2.0\BikeRental.AssemblyInfo.cs
+C:\Git\BikeRental\BikeRental\obj\Debug\netstandard2.0\BikeRental.dll
+C:\Git\BikeRental\BikeRental\obj\Debug\netstandard2.0\BikeRental.pdb
