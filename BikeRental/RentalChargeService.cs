@@ -25,14 +25,27 @@ namespace BikeRental
 
         public int CalculateCharge(Rental rental)
         {
-            int charge = 0;
+            if (rental.Hours < 5)
+            {
+                return rental.Hours * _chargePerHour;
+            }
 
             if (rental.Hours < 24)
             {
-                charge = rental.Hours * _chargePerHour;
+                return 20;
             }
 
-            return charge;
+            if (rental.Hours <= 72)
+            {
+                return (rental.Hours / 24) * 20;
+            }
+
+            if (rental.Hours < 168)
+            {
+                return 60;
+            }
+
+            return (rental.Hours / 168) * 60;
         }
     }
 }
