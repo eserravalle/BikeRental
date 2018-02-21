@@ -12,10 +12,14 @@ namespace BikeRental
 
         protected List<Rental> Rentals { get; set; }
 
-        public void RentABike(Bike bike, Person person)
+        public Rental RentABike(Bike bike, Person person, int hours)
         {
-            var rental = new Rental(bike, person);
+            var rental = new Rental(bike, person, hours);
+            rental.Charge = RentalChargeService.GetInstance().CalculateCharge(rental);
+            
             Rentals.Add(rental);
+            
+            return rental;
         }
 
         public int GetRentalsCount()
