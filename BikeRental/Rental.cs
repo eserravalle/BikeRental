@@ -15,5 +15,6 @@ namespace BikeRental
         public Person Person { get; set; }
         public int Hours { get; set; }
         public int Charge { get; set; }
+        public FamilyRental FamilyRental { get; set; }
     }
 }

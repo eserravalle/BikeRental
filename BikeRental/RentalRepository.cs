@@ -48,6 +48,24 @@ namespace BikeRental
             return rental;
         }
 
+        public FamilyRental AddToAFamilyRental(List<Rental> rentals)
+        {
+            FamilyRental familyRental = new FamilyRental();
+
+            if (rentals.Count < 3 || rentals.Count > 5)
+            {
+                throw new Exception("Family Rentals only apply to 3 to 5 family members");
+            }
+
+            foreach(var rental in rentals)
+            {
+                familyRental.AddARental(rental);
+                rental.FamilyRental = familyRental;
+            }
+            
+            return familyRental;
+        }
+
         public int GetRentalsCount()
         {
             return Rentals.Count;
